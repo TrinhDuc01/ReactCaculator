@@ -1,23 +1,37 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Button from './component/Button';
+import Display from './component/Display';
+
+import displayButton from './data';
 
 function App() {
+  const [caculation, setCaculation] = useState('')
+
+  const handleButton = (key) => {
+    setCaculation((prev) => prev + key)
+  }
+
+  const handleCaculate = () => {
+    function evil(fn) {
+      return new Function('return ' + fn)();
+    }
+    setCaculation(evil(caculation))
+  }
+  console.log(caculation)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Display caculation={caculation} />
+      <button style={{background:'rgb(231, 231, 231)',color:'black'}} onClick={()=>setCaculation('')}>AC</button>
+      {displayButton.map((element) => (
+        <Button key={element.key}
+          element={element}
+          handleButton={handleButton}
+        />
+      ))}
+
+      <button onClick={handleCaculate}>=</button>
+
     </div>
   );
 }

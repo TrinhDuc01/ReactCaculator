@@ -1,0 +1,30 @@
+.Todo {
+    text-align: center;
+    font-size: 20px;
+}
+
+.Heading {
+    font-size: 30px;
+    margin: 30px 0 20px 0;
+}
+
+.inputTodo {
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    border: 0.5px solid black;
+}
+
+table {
+    margin: 20px auto;
+}
+
+.buttonTodo {
+    font-size: 16px;
+    background-color: rgb(100, 98, 98);
+    border: 0px;
+    margin-left: 4px;
+    border-radius: 5px;
+    color: #fff;
+    padding: 4px 10px;
+}

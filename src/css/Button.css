@@ -1,7 +1,24 @@
-button{
+.buttonCaculator{
     border: 0.1px solid silver;
     padding: 9px 36px;
     width: 110px;
     background-color: rgb(246, 165, 59);
     color: #fff;
 }
+
+.buttonEqual{
+    border: 0.1px solid silver;
+    padding: 9px 36px;
+    width: 110px;
+    background-color: rgb(246, 165, 59);
+    color: #fff;
+}
+
+.buttonAC{
+    border: 0.1px solid silver;
+    padding: 9px 36px;
+    width: 110px;
+    background-color: rgb(246, 165, 59);
+    color: #fff;
+}
+

@@ -1,0 +1,31 @@
+
+.list-products{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto auto;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.product{
+    border: 1px solid rgb(72, 72, 72);
+    width: 20%;
+    margin: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px 5px #888888;
+}
+
+.product img{
+    width: 150px;
+    margin-top: 10px;
+    height: 250px;
+}
+
+.product > .content{
+    text-align: center;
+    padding: 10px;
+    align-items: end;
+}
+
+
